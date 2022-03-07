@@ -1,0 +1,418 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Work+Sans:wght@400&display=swap');
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        img {
+            width: 30%;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            background: white;
+        }
+        /* section {
+            border: 5px solid red;
+            margin: 20px;
+        } */
+        
+        .navbar {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%x;
+            position: fixed;
+            background-color: white;
+            z-index: 5;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 250px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: #747474;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: rgba(221, 221, 221, 0.795);
+            color: #00b39b;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            color: #00b39b;
+        }
+        
+        .navbar img {
+            width: 20%;
+        }
+        
+        .links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style: none;
+            align-items: baseline;
+        }
+        
+        .navbar-links {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .navlink,
+        .dropdown {
+            padding: 10px;
+            text-decoration: none;
+            font-family: 'roboto', sans-serif;
+            color: #ababab;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .navlink:hover {
+            color: #00b39b;
+        }
+        
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 1015px;
+            margin-top: 200px;
+            position: relative;
+        }
+        
+        header img {
+            width: 40px;
+        }
+        
+        header h2 {
+            margin: 1em 0;
+            font-family: 'Work Sans', Arial, sans-serif;
+            letter-spacing: -.3px;
+            font-size: 2.125rem;
+            color: #00b39b;
+        }
+        
+        header .paragraphes {
+            color: #747474;
+        }
+        
+        .paragraphes {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .paragraphes div {
+            width: 48%;
+            padding: 0;
+            margin: 12px 0px;
+            text-align: justify;
+        }
+        
+        .services {
+            display: flex;
+            width: 1015px;
+            justify-content: space-between;
+            height: 400px;
+        }
+        
+        .services>div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0.3cm;
+            border-radius: 4%;
+            color: white;
+            width: 32%;
+            padding: 25px;
+        }
+        
+        .forPatients {
+            background-color: #03ae97;
+        }
+        
+        .forPatients:hover {
+            background-color: #14ceb5;
+        }
+        
+        .forDoctors {
+            background-color: #357bd6;
+        }
+        
+        .forDoctors:hover {
+            background-color: #4887da;
+        }
+        
+        .forClinics {
+            background-color: #1a2430;
+        }
+        
+        .forClinics:hover {
+            background-color: #23303d;
+        }
+        
+        .services img {
+            width: 25px;
+        }
+        
+        .top,
+        .bottom {
+            width: 100%;
+        }
+        
+        .services h3 {
+            font-family: 'work sans', sans-serif;
+            font-size: 26px;
+        }
+        
+        .services p {
+            font-family: 'work sans', sans-serif;
+            font-size: 24px;
+            text-align: justify;
+        }
+        
+        .services select {
+            margin-bottom: 20px;
+            font-family: 'roboto', sans-serif;
+            font-size: 19px;
+            background-color: transparent;
+            border: none;
+            text-decoration: underline;
+            color: white;
+            display: flex;
+            width: fit-content;
+        }
+        
+        option {
+            color: black
+        }
+        
+        .brands {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 120px;
+            width: 1015px;
+            margin: 40px 0;
+        }
+        
+        .brands h3 {
+            width: 33%;
+        }
+        
+        .logoImgContainer {
+            width: 66%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .brands img {
+            width: 20%;
+            max-width: fit-content;
+            margin: 15px;
+        }
+        
+        .brands h3 {
+            color: #00b39b;
+            font-size: 26px;
+            text-align: justify;
+            margin: 15px;
+        }
+        
+        .statistics {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 1015px;
+        }
+        
+        .stats {
+            background-image: url("https://www.docplanner.com/img/logo.png");
+            background-repeat: no-repeat;
+            background-position: 7vw 22vw;
+            width: 100%;
+            background-color: #e5faf8;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 1.875em 0 0.625em;
+        }
+        
+        .stats-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 520px;
+            height: 640px;
+        }
+        
+        .stats-container img {
+            width: 36px;
+        }
+        
+        .leader-number-patient {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin: 20px 0px;
+        }
+        
+        .appointments-active-doctors {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 20px 0px;
+        }
+        
+        .leader,
+        .active-doctors,
+        .appointments,
+        .patient-number {
+            background-color: white;
+            height: 250px;
+            width: 230px;
+            margin: 15px;
+            border-radius: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .info {
+            width: 500px;
+            height: 200px;
+            margin: 32px 0px 0px;
+        }
+        
+        .info h1 {
+            color: #00b39b;
+            font-size: 34px;
+            font-family: 'work sans', sans-serif;
+        }
+        
+        .stats-container p {
+            color: #747474;
+            font-size: 13px;
+            font-family: 'roboto', sans-serif;
+            text-align: center;
+        }
+        
+        .stats-container h3 {
+            color: #00b39b;
+            font-size: 24px;
+            font-family: 'work sans', sans-serif;
+            margin: 12px 0;
+            text-align: center;
+        }
+        
+        .offices {
+            width: 1015px;
+            margin: 100px 0;
+        }
+        
+        .offices-location {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        
+        .offices-location>div {
+            width: 100%;
+            border-radius: 3%;
+            background-color: white;
+            border: 1px #c7c4c4 solid;
+        }
+        
+        .offices-location>div:hover {
+            box-shadow: 0 0 20px rgba(33, 33, 33, .2);
+        }
+        
+        .city_name-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px 10px;
+        }
+        
+        .cities {
+            width: fit-content;
+        }
+        
+        .offices img {
+            width: 100%;
+            border-top-left-radius: 3%;
+            border-top-right-radius: 3%;
+        }
+        
+        .info-about-offices h1 {
+            color: #00b39b;
+            font-family: 'work sans', sans-serif;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .info-about-offices {
+            margin: 100px 25%;
+        }
+        
+        .info-about-offices p {
+            color: #747474;
+            font-family: 'roboto', sans-serif;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .contact h1 {
+            font-family: 'work sans', sans-serif;
+            font-size: 30px;
+            color: #747474;
+            margin: 30px 20%;
+        }
+        
+        .contact-heading {
+            width: 1015px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 0;
+        }
+        
+        footer {
+            font-family: 'roboto', sans-serif;
+            color: #747474;
+            font-size: 12px;
+            font-weight: 100;
+            text-align: center;
+            margin-top: 50px;
+        }
